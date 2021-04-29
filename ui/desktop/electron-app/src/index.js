@@ -130,7 +130,7 @@ app.on('ready', async () => {
   });
 
   // If the user-specified origin changes, reload the page so that
-  // the CSP can be refreshed with the this source allowed
+  // the CSP can be refreshed with this source allowed
   origin.onOriginChange(() => mainWindow.loadURL(emberAppURL));
 
   // If you want to open up dev tools programmatically, call
